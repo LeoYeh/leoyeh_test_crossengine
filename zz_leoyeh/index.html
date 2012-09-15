@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- 
+        [測試]
+        基本手機 顯示物件 測試
+    -->
+    <meta name="viewport" target-densitydpi="device-dpi" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title></title>
+    <script type="text/javascript" src="../corejs/SourceInclude.js"></script>
+    <script type="text/javascript">
+        SourceInclude.includeCore();
+        SourceInclude.includeMediaCss();
+        SourceInclude.includeTween();
+    </script>
+    <style type="text/css">
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        $(function () {
+
+			var ar = [ new util.CDpi(), new util.CVersion(), new interaction.DevieDetector() ];
+			for( var i in ar ) ar[i].demo();
+		
+        });
+    </script>
+</body>
+</html>
